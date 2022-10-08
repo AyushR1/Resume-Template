@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -9,10 +9,10 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{tabularx}
 \usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
 \input{glyphtounicode}
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 \pagestyle{fancy}
@@ -101,13 +101,14 @@
 
 
 \begin{document}
-
 %----------HEADING-----------------
 \begin{center}
     \textbf{\Huge \scshape Ayush Rathore} \\ \vspace{1pt}
-    \small \href{tel:++xxxxxxxxxxxx}{\underline{++xx-xxxxxxxxxx}} $|$ \href{mailto:email@email.com}{\underline{email@email.com}} $|$ 
-    \href{https://linkedin.com/in/ayushr1}{\underline{LinkedIN}} $|$
-    \href{https://github.com/ayushr1}{\underline{GitHub}}
+    \faIcon{envelope} \href{mailto:xxxxxxxxxxxx}{\underline{xxxxxxxxxxxx}} $|$ 
+ \faIcon{phone-square-alt} \small  \href{tel:++xxxxxxxxxxxx}{\underline{++xxxxxxxxxxxx}} $|$ 
+   \faIcon {linkedin} \href{https://linkedin.com/in/ayushr1}{\underline{LinkedIN}} $|$
+  % \faIcon{link} \href{https://ayushr1.github.io/}{{ayushr1.com}} $|$
+  \faIcon{github}  \href{https://github.com/ayushr1}{\underline{GitHub}}
 \end{center}
 %-----------EDUCATION-----------------
 \section{Education}
@@ -118,21 +119,20 @@
       {Bachelor of Technology in Computer Science and Engineering; CPI: x.xx*}{Dec 2020 - Jun 2024}
     \resumeSubheading
       {Burgess English Hr. Sec. School}{Bilaspur, CG}
-      {Intermediate: xx.x \%  Matriculation: x.x CGPA }{Jun 2015 - May 2019}
+      {Intermediate: x \%  Matriculation: x.x CGPA }{Jun 2015 - May 2019}
   \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-    {ACM - SC}{}
-    {Volunteer Work }{May 2021-Jul 2021}
+    \resumeSubheading    
+    {ACM - SC}{} {\href{https://drive.google.com/file/d/1KQhqLSIIQfqN3C1CQD_8H47HMY0nvCxV/view?usp=sharing}{{Tech Team, Volunteer Work}}}{May 2021-Jul 2021}
     \resumeItemListStart
         \resumeItemWithoutTitle
           {Implemented automation scripts to   \href{https://github.com/AyushR1/Bulk-Certificate-Maker/}{\underline{{automate}}} bulk emailing leading to 99\%+ time savings.}
         \resumeItemWithoutTitle
           {Designed the official     \href{https://rgipt.acm.org/}{\underline{{website}}} of the organisation with a team of 3 peoples.}
           \resumeItemWithoutTitle
-                   {Lectured on {Open Source }Development, {Git}, and {GitHub} and tutored \href{ https://github.com/AyushR1/Git-GitHub-Workshop/}{\underline{workshop}} for over 100 attendees.}
+                   {Lectured on {Open Source }Development, {Git}, and {GitHub} and tutored \href{ https://github.com/AyushR1/Git-GitHub-Workshop/}{\underline{worksho}}p for over 100 attendees.}
            \resumeItemWithoutTitle
       {Composed Competitive Programming questions for {Coding} contests and mentored over 50 students.}
       \resumeItemListEnd
@@ -146,40 +146,45 @@
     \resumeItemListStart
           \resumeItemWithoutTitle
           {Finding the total instructions during dynamic execution of a process with 100\% precision using GDB.}
-                    \resumeItemWithoutTitle
-          {Calculated CPU Burst time using no. of instructions and cycles for each instruction.}
-      \resumeItemListEnd
-      
+                   \resumeItemWithoutTitle
+         {Calculated CPU Burst time using no. of instructions and cycles for each instruction.}
+      \resumeItemListEnd 
    \resumeSubheadingPro
-    {\textbf{Saarthi - Notes} $|$ \emph{Flutter App - Dart} | 
+    {\href{https://github.com/AyushR1/Saarthi/}{{\textbf{Saarthi - Notes}}}      $|$ \emph{Flutter App - Dart} | 
  \href{https://github.com/AyushR1/Saarthi/}{\underline{\textbf{GitHub}}}}{\small Present}
     \resumeItemListStart
         \resumeItemWithoutTitle
           {Developing a \textbf{cross-platform} app for buying and selling digital notes.}
       \resumeItemListEnd
                 \resumeSubheadingPro
-    {\textbf{RGIPT Attendance Management} $|$ \emph{Web App - HTML,CSS, MySQL, PHP} |  \href{https://github.com/AyushR1/AttendanceSystem/}{\underline{\textbf{GitHub}}}}{\small2022}
+    { \href{https://github.com/AyushR1/AttendanceSystem/}{{\textbf{RGIPT Attendance Management}}} $|$ \emph{Web App - HTML, CSS, MySQL} |  \href{https://github.com/AyushR1/AttendanceSystem/}{\underline{\textbf{GitHub}}}}{\small2022}
     \resumeItemListStart
           \resumeItemWithoutTitle
           {Composed a Web App  that modernises attendance management to digitally manage attendance of RGIPT.}
       \resumeItemListEnd
-      \resumeSubheadingPro
-    {\textbf{Scripts} $|$ \emph{Python, Bash} |  \href{https://github.com/AyushR1/Scripts}{\underline{\textbf{GitHub}}}}{\small2021}
+        \resumeSubheadingPro
+    {\href{https://github.com/AyushR1/Traffic-Light-Controlling}{{\textbf{Traffic Light Control}}} $|$ \emph{Tool - MatLab} |  \href{https://github.com/AyushR1/Traffic-Light-Controlling}{\underline{\textbf{GitHub}}}}{\small2021}
     \resumeItemListStart
           \resumeItemWithoutTitle
-          {Devised scripts for over 10 repetitive \& time-consuming process.}
+          {Implemented image processing techniques to analyse traffic congestion and control the execution of traffic lights.}
+      \resumeItemListEnd
+      \resumeSubheadingPro
+    { \href{https://github.com/AyushR1/Automaton}{\textbf{Automaton}}     $|$ \emph{Scripts - Python, Bash} |  \href{https://github.com/AyushR1/Automaton}{\underline{\textbf{GitHub}}}}{\small2021}
+    \resumeItemListStart
           \resumeItemWithoutTitle
-          {Automated release/test builds for 2+ projects, simple shortcuts to ease out tasks.}
+          {Devised scripts for over 10 repetitive process, automated test builds for 2+ projects, shortcuts to ease out tasks.}
+         % \resumeItemWithoutTitle
+          %{Automated release/test builds for 2+ projects, simple shortcuts to ease out tasks.}
       \resumeItemListEnd
           \resumeSubheadingPro
-    {\textbf{AR Beast Kernel} $|$  \emph{Custom Android Linux Kernel} |   \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\underline{\textbf{GitHub}}}}{\small2018}
+    { \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\textbf{AR Beast Kernel}} $|$  \emph{Linux Kernel - Android, C} |   \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\underline{\textbf{GitHub}}}}{\small2018}
     \resumeItemListStart
           \resumeItemWithoutTitle
           {Coded device-specific     \href{ https://github.com/AyushR1/AR_Beast-Tomato/blob/tomato/drivers/thermal/arb/msm_thermal.c}{\underline{Thermal control driver}}  in C which reduced heating and increased performance by 10\%.}
            \resumeItemWithoutTitle
           {Made device-specific  \href{https://github.com/AyushR1/AR_Beast-Zuk_Z2/commit/a982ac0e1ddad1d1338cbd6b0a955c583a93072d}{\underline{Current Control driver}} in C which improved charging time by 30 min.}
                   \resumeItemWithoutTitle
-          {Built this project for 4 Android Devices which helped over \href{https://forum.xda-developers.com/t/discontinued-ar_beast-kernel-r6-3-18-101-mar-23-2018-dragontc.3735016/}{\underline{10000}} users reaching over \href{ https://androidfilehost.com/?w=profile&uid=673368273298917501}{\underline{30,000 downloads.}}}  
+          {Built this project for 4 Android Devices which helped over \href{https://forum.xda-developers.com/t/discontinued-ar_beast-kernel-r6-3-18-101-mar-23-2018-dragontc.3735016/}{\underline{10000}} users reaching over \href{ https://androidfilehost.com/?w=profile&uid=673368273298917501}{\underline{30},\underline{000 downloads.}}}  
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 %
@@ -203,13 +208,16 @@
 \href{https://leetcode.com/AyushR1/}{\underline{LeetCode}}, 
 \href{https://auth.geeksforgeeks.org/user/ayushr1_gfg}{\underline{GeeksforGeeks}}, Codeforces, and InterviewBit.}
 \resumeItemWithoutTitle
-{Qualified for the ICPC Regionals 2020 being the top Competitive coding team.} 
+{Regionalist in the 2020-21 \href{https://drive.google.com/file/d/166f0APz01XpxkFRC2Jj-MZfdezvqN_cL/view?usp=sharing}{{\underline{ICPC Asia Amrita}p{\underline{uri Doublesite}}}} \& \href{https://drive.google.com/file/d/12iHnk-QTFNEFMlT0RtzUQPJx-VE-aazo/view?usp=sharing}{\underline{ICPC Asia Gwalior-Pune}} being the top Competitive coding team}
+\resumeItemWithoutTitle
+{Qualified 
+\href{https://drive.google.com/file/d/1dZ_wFBDmbI-wAKbAvBAo_n1-ssqiqFjs/view?usp=sharing}{{\underline{Goo}g{\underline{le CodeJam}}}} 2021 scoring 59 points.}
 \resumeItemWithoutTitle
 {Awarded RGIPT Merit-Cum-Means Scholarship for the Top 10\%* students in the CSE batch. }
 \resumeItemWithoutTitle
 {Qualified IIT-JEE Advanced 2020, ranking in the top 1.84\%.}
 \resumeItemWithoutTitle
-{Achieved International Rank 15 \& Zonal Rank 1 in the  International English Olympiad 2017.}
+{Achieved \underline{International Rank 15} \& Zonal Rank 1 in the  International English Olympiad 2017.}
 \resumeItemWithoutTitle
 {Finalist among 90+ competitors in the CBSE National Science Exhibition.}
 \resumeSubHeadingListEnd
