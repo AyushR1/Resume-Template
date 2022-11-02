@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -13,7 +13,6 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \input{glyphtounicode}
-\pdfgentounicode=1
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -38,6 +37,9 @@
 \titleformat{\section}{
   \vspace{-3pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -75,7 +77,7 @@
 \newcommand{\resumeSubheadingPro}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & #2 \\
+      #1 & {\textit {\small{#2}}} \\
     \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubheadingPOR}[2]{
@@ -104,134 +106,146 @@
 %----------HEADING-----------------
 \begin{center}
     \textbf{\Huge \scshape Ayush Rathore} \\ \vspace{1pt}
-    \faIcon{envelope} \href{mailto:xxxxxxxxxxxx}{\underline{xxxxxxxxxxxx}} $|$ 
- \faIcon{phone-square-alt} \small  \href{tel:++xxxxxxxxxxxx}{\underline{++xxxxxxxxxxxx}} $|$ 
+    \faIcon{envelope} \href{mailto:20cs3018@rgipt.ac.in}{\underline{xxxxxxx@r}g\underline{i}p\underline{t.ac.in}} $|$ 
+ \faIcon{phone-square-alt} \small  \href{tel:+917000497170}{\underline{+91-xxxxxxxx}} $|$ 
    \faIcon {linkedin} \href{https://linkedin.com/in/ayushr1}{\underline{LinkedIN}} $|$
   % \faIcon{link} \href{https://ayushr1.github.io/}{{ayushr1.com}} $|$
   \faIcon{github}  \href{https://github.com/ayushr1}{\underline{GitHub}}
 \end{center}
 %-----------EDUCATION-----------------
+
+
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheadingb
-      {Rajiv Gandhi Institute of Petroleum Technology}{Jais, UP}
-     {An \textbf{Institute of National Importance} along the lines of \textbf{IITs}}{}
-      {Bachelor of Technology in Computer Science and Engineering; CPI: x.xx*}{Dec 2020 - Jun 2024}
+      {\href{https://rgipt.ac.in//}{{{{Rajiv Gandhi Institute of Petroleum Technology}}}} }{Jais, UP}
+     {\href{https://rgipt.ac.in//}{{{An \textbf{Institute of National Importance} along the lines of \textbf{IITs}}}} }{} 
+     {Bachelor of Technology in Computer Science and Engineering; CPI: 8.48*}{Dec 2020 - Jun 2024}
     \resumeSubheading
       {Burgess English Hr. Sec. School}{Bilaspur, CG}
-      {Intermediate: x \%  Matriculation: x.x CGPA }{Jun 2015 - May 2019}
+      {Intermediate: 77.8\%  $|$ Matriculation: 9.8 CGPA }{Jun 2017 - May 2019}
   \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
     \resumeSubheading    
-    {ACM - SC}{} {\href{https://drive.google.com/file/d/1KQhqLSIIQfqN3C1CQD_8H47HMY0nvCxV/view?usp=sharing}{{Tech Team, Volunteer Work}}}{May 2021-Jul 2021}
+       {\href{https://www.rgipt.ac.in/en/page/home-cse}{Dept. of CSE, RGIPT}}{} {{Computer Programming  (CS101) Tutor}}{Nov 2022 - Present}
     \resumeItemListStart
-        \resumeItemWithoutTitle
-          {Implemented automation scripts to   \href{https://github.com/AyushR1/Bulk-Certificate-Maker/}{\underline{{automate}}} bulk emailing leading to 99\%+ time savings.}
-        \resumeItemWithoutTitle
-          {Designed the official     \href{https://rgipt.acm.org/}{\underline{{website}}} of the organisation with a team of 3 peoples.}
-          \resumeItemWithoutTitle
-                   {Lectured on {Open Source }Development, {Git}, and {GitHub} and tutored \href{ https://github.com/AyushR1/Git-GitHub-Workshop/}{\underline{worksho}}p for over 100 attendees.}
-           \resumeItemWithoutTitle
-      {Composed Competitive Programming questions for {Coding} contests and mentored over 50 students.}
+             
+         \resumeItemWithoutTitle
+          {Carried out programming .....}
+          \resumeItemWithoutTitle     
+          {Guided students ......}      
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+   
    \resumeSubheadingPro
-    {\textbf{Dynamic Instructions Calculation} $|$ \emph{Tool} |  \href{https://github.com/AyushR1/Scripts}{\underline{\textbf{}}}}{\small Present}
-    \resumeItemListStart
-          \resumeItemWithoutTitle
-          {Finding the total instructions during dynamic execution of a process with 100\% precision using GDB.}
-                   \resumeItemWithoutTitle
-         {Calculated CPU Burst time using no. of instructions and cycles for each instruction.}
-      \resumeItemListEnd 
-   \resumeSubheadingPro
-    {\href{https://github.com/AyushR1/Saarthi/}{{\textbf{Saarthi - Notes}}}      $|$ \emph{Flutter App - Dart} | 
- \href{https://github.com/AyushR1/Saarthi/}{\underline{\textbf{GitHub}}}}{\small Present}
+    {\href{https://github.com/AyushR1/Saarthi/}{{\textbf{Saarthi - Notes}}}      $|$ \emph{App - Flutter, NodeJS, MongoDB} | 
+ \href{https://github.com/AyushR1/Saarthi/}{\underline{\textbf{GitHub}}}}{}
     \resumeItemListStart
         \resumeItemWithoutTitle
-          {Developing a \textbf{cross-platform} app for buying and selling digital notes.}
+          {Developed a cross-platform \textbf{app} for sharing and selling notes of freely available courses. }
+        \resumeItemWithoutTitle
+          {Implemented the backend in \textbf{NodeJS} with \textbf{MongoDB} to manage the database.}
       \resumeItemListEnd
-                \resumeSubheadingPro
-    { \href{https://github.com/AyushR1/AttendanceSystem/}{{\textbf{RGIPT Attendance Management}}} $|$ \emph{Web App - HTML, CSS, MySQL} |  \href{https://github.com/AyushR1/AttendanceSystem/}{\underline{\textbf{GitHub}}}}{\small2022}
+    \resumeSubheadingPro
+    { \href{https://github.com/AyushR1/Dynamic-Instructions-Calculation}{{\textbf{Dynamic Instructions Calculation}}} $|$ \emph{Tool - Flask, Python, Bash} |  \href{https://github.com/AyushR1/Dynamic-Instructions-Calculation}{\underline{\textbf{GitHub}}}}{}
     \resumeItemListStart
           \resumeItemWithoutTitle
-          {Composed a Web App  that modernises attendance management to digitally manage attendance of RGIPT.}
+          {Devised a tool to find complete instructions analysis during program execution in runtime with 100\% precision with \textbf{GDB}.}
+                   \resumeItemWithoutTitle
+         {Implemented this tool as a web app utilising \textbf{Flask}, where one can get analysis using the tool in under 60 seconds.}
+                   \resumeItemWithoutTitle
+         {Visualised front end in \textbf{ReactJS} to implement an interactive 1 page UI with live status from the backend.}
+         
       \resumeItemListEnd
-        \resumeSubheadingPro
-    {\href{https://github.com/AyushR1/Traffic-Light-Controlling}{{\textbf{Traffic Light Control}}} $|$ \emph{Tool - MatLab} |  \href{https://github.com/AyushR1/Traffic-Light-Controlling}{\underline{\textbf{GitHub}}}}{\small2021}
-    \resumeItemListStart
-          \resumeItemWithoutTitle
-          {Implemented image processing techniques to analyse traffic congestion and control the execution of traffic lights.}
-      \resumeItemListEnd
+
       \resumeSubheadingPro
-    { \href{https://github.com/AyushR1/Automaton}{\textbf{Automaton}}     $|$ \emph{Scripts - Python, Bash} |  \href{https://github.com/AyushR1/Automaton}{\underline{\textbf{GitHub}}}}{\small2021}
+    { \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\textbf{AR Beast Kernel}} $|$  \emph{Linux Kernel - Android, C} |   \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\underline{\textbf{GitHub}}}}{}
     \resumeItemListStart
           \resumeItemWithoutTitle
-          {Devised scripts for over 10 repetitive process, automated test builds for 2+ projects, shortcuts to ease out tasks.}
-         % \resumeItemWithoutTitle
-          %{Automated release/test builds for 2+ projects, simple shortcuts to ease out tasks.}
-      \resumeItemListEnd
-          \resumeSubheadingPro
-    { \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\textbf{AR Beast Kernel}} $|$  \emph{Linux Kernel - Android, C} |   \href{https://github.com/AyushR1?tab=repositories\&q=ar_beast\&type=\&language=\&sort=}{\underline{\textbf{GitHub}}}}{\small2018}
-    \resumeItemListStart
-          \resumeItemWithoutTitle
-          {Coded device-specific     \href{ https://github.com/AyushR1/AR_Beast-Tomato/blob/tomato/drivers/thermal/arb/msm_thermal.c}{\underline{Thermal control driver}}  in C which reduced heating and increased performance by 10\%.}
+          {Coded device-specific     \href{https://github.com/AyushR1/AR_Beast-Tomato/blob/tomato/drivers/thermal/arb/msm_thermal.c}{\underline{Thermal control driver}}  in C (500+ lines), which reduced heating and increased performance by 10\%.}
            \resumeItemWithoutTitle
-          {Made device-specific  \href{https://github.com/AyushR1/AR_Beast-Zuk_Z2/commit/a982ac0e1ddad1d1338cbd6b0a955c583a93072d}{\underline{Current Control driver}} in C which improved charging time by 30 min.}
+          {Made device-specific  \href{https://github.com/AyushR1/AR_Beast-Zuk_Z2/commit/a982ac0e1ddad1d1338cbd6b0a955c583a93072d}{\underline{Current Control driver}} in C (200+ lines), which improved charging time by 30 min.}
                   \resumeItemWithoutTitle
-          {Built this project for 4 Android Devices which helped over \href{https://forum.xda-developers.com/t/discontinued-ar_beast-kernel-r6-3-18-101-mar-23-2018-dragontc.3735016/}{\underline{10000}} users reaching over \href{ https://androidfilehost.com/?w=profile&uid=673368273298917501}{\underline{30},\underline{000 downloads.}}}  
+          {Built this project for 4 Android Devices, which helped over \href{https://forum.xda-developers.com/t/discontinued-ar_beast-kernel-r6-3-18-101-mar-23-2018-dragontc.3735016/}{\underline{10000}} users and reached over \href{ https://androidfilehost.com/?w=profile&uid=673368273298917501}{\underline{30},\underline{000 downloads.}}}  
       \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%-----------PORS-----------------
+\section{Positions of Responsibility}
+
+
+
+  \resumeSubHeadingListStart
+      \resumeSubheadingPro
+          {\href{https://rgipt.acm.org/}{{\textbf{ACM - SC}}} $|$ \emph{{Technical Head \&  Treasurer}} }{}
+     \resumeItemListStart
+   
+        \resumeItemWithoutTitle
+          {Automated bulk emailing using \href{https://github.com/AyushR1/Bulk-Certificate-Maker/}{automation \textbf{scripts}, leading to 99\%+ time savings.}}
+        \resumeItemWithoutTitle
+          {Designed the official \href{https://rgipt.acm.org/}{\underline{{\textbf{website}}} of the organisation} with a team of 3 people.}
+    
+     \resumeItemWithoutTitle
+      {Composed \textbf{Competitive Programming} questions for \href{https://www.codechef.com/ODE2021/}{\underline{Codin}g Contests} contests and mentored over 50 students.}
+     \resumeItemWithoutTitle
+       {Coordinated as the Core-Organising team of 'COSMOS-X', the International Inter-Departmental Fest.}
+    
+      \resumeItemListEnd
+      
+  \resumeSubheadingPro
+    { \href{https://www.rgipt.ac.in/en/page/home-cse}{{\textbf{Science \& Technical Council}}} $|$ \emph{Core Team Member- KODE Club} }{}
+        \resumeItemListStart
+          \resumeItemWithoutTitle     
+                 {\href{https://photos.app.goo.gl/C3RExPgdJpwppjnm9}{Lectured on \textbf{Open Source Development, Git,} and \textbf{GitHub}} and tutored \href{ https://github.com/AyushR1/Git-GitHub-Workshop/}{{workshops for over 100 attendees.}} }     
+                  \resumeItemWithoutTitle
+      {Organised and hosted 3+ events, webinars, and workshops.}
+     \resumeItemListEnd
+     \resumeSubheadingPro
+    { \href{https://www.rgipt.ac.in/en/page/home-cse}{{\textbf{Dept. of CSE, RGIPT}}} $|$ \emph{Training and Placement Coordinator} }{}
+       
 \resumeSubHeadingListEnd
 %
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
 	\resumeSubHeadingListStart
-    	\resumeSubItem{Areas of Interest}{Open Source Development, Data Structures, Algorithms, Android}
-	\resumeSubItem{Languages}{C++, Python, C, SQL, HTML, CSS, JavaScript}
-	\resumeSubItem{Tools}{Flutter, Django, Git, GitHub}
+	\resumeSubItem{Languages}{C++, C, Python, SQL, HTML, CSS, JavaScript}
+        	\resumeSubItem{Tools/Frameworks}{Git, GitHub, Flutter, Docker}
+    \resumeSubItem{Platforms}{Linux, Web, Windows, Cloud}
+        	\resumeSubItem{Courses}{Databases, Operating Systems, Networking, Computer Architecture, Web Technology}
 \resumeSubHeadingListEnd
 
 %-----------Awards-----------------
 \section{Achievements}
 \resumeSubHeadingListStart
 \resumeItemWithoutTitle
-{Contributed to 20+ Open Source Projects with over 1800 contributions on  \href{https://github.com/ayushr1}{\underline{GitHub}}.}
-
+{Contributed to 20+ \textbf{Open Source Projects} related to App Development, Custom Linux Kernels on \href{https://github.com/ayushr1}{\underline{GitHub}}.}
 
 \resumeItemWithoutTitle
-{Solved \href{https://github.com/AyushR1/DSA-QA/}{\underline{200+ Problems}},  on 
+{Solved \href{https://github.com/AyushR1/DSA-QA/}{\underline{200+ Problems}}  on 
 \href{https://leetcode.com/AyushR1/}{\underline{LeetCode}}, 
 \href{https://auth.geeksforgeeks.org/user/ayushr1_gfg}{\underline{GeeksforGeeks}}, Codeforces, and InterviewBit.}
 \resumeItemWithoutTitle
 {Regionalist in the 2020-21 \href{https://drive.google.com/file/d/166f0APz01XpxkFRC2Jj-MZfdezvqN_cL/view?usp=sharing}{{\underline{ICPC Asia Amrita}p{\underline{uri Doublesite}}}} \& \href{https://drive.google.com/file/d/12iHnk-QTFNEFMlT0RtzUQPJx-VE-aazo/view?usp=sharing}{\underline{ICPC Asia Gwalior-Pune}} being the top Competitive coding team}
 \resumeItemWithoutTitle
 {Qualified 
-\href{https://drive.google.com/file/d/1dZ_wFBDmbI-wAKbAvBAo_n1-ssqiqFjs/view?usp=sharing}{{\underline{Goo}g{\underline{le CodeJam}}}} 2021 scoring 59 points.}
+for the 2021 \href{https://drive.google.com/file/d/1dZ_wFBDmbI-wAKbAvBAo_n1-ssqiqFjs/view?usp=sharing}{{\underline{Goo}g{\underline{le CodeJam}}}}, scoring 59 points.}
 \resumeItemWithoutTitle
-{Awarded RGIPT Merit-Cum-Means Scholarship for the Top 10\%* students in the CSE batch. }
+{Awarded RGIPT Merit-Cum-Means Scholarship for the \textbf{Top 10\%*} students in the CSE batch. }
 \resumeItemWithoutTitle
-{Qualified IIT-JEE Advanced 2020, ranking in the top 1.84\%.}
+{Qualified for the \textbf{IIT-JEE Advanced} 2020, ranking in the top \textbf{1.84}\%.}
 \resumeItemWithoutTitle
-{Achieved \underline{International Rank 15} \& Zonal Rank 1 in the  International English Olympiad 2017.}
+{Achieved \textbf{{International Rank 15}} \& Zonal Rank 1 in the  International English Olympiad 2017.}
 \resumeItemWithoutTitle
 {Finalist among 90+ competitors in the CBSE National Science Exhibition.}
 \resumeSubHeadingListEnd
 %-------------------------------------------
-
-
-%-----------PORS-----------------
-\section{Positions of Responsibility}
-  \resumeSubHeadingListStart
-      \resumeSubheadingPOR
-   {Training and Placement Coordinator}{CSE Department, RGIPT}
-       \resumeSubheadingPOR
-   {Core Team Member- KODE Club}{Science \& Technical Council, RGIPT}
-       \resumeSubheadingPOR
-   {Treasurer}{ACM - SC}
-\resumeSubHeadingListEnd
 \end{document}
