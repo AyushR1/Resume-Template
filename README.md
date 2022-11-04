@@ -21,7 +21,7 @@ This template is an effort to ease the process of resume building for freshers t
 
 # Showcase
 
-![Untitled](Resume%20Template%2041e51fc8ec6f48b288435df4986362ca/Untitled.jpeg)
+![Untitled](Resume%20Template%2041e51fc8ec6f48b288435df4986362ca/Untitled.png)
 
 # **Quick start**
 
