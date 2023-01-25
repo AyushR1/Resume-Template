@@ -1,0 +1,288 @@
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{graphicx}  
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\raggedright\large\uppercase
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+  {#1 \vspace{-2pt}}
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {#3} & {#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingb}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+             \vspace{-3pt}
+      {#5} & { #6} \\
+   {\scriptsize(#3)} & \textit{\scriptsize #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingProject}[5]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+   \href{#4}{\textbf{#1}} \small{{ $|$ #3}} { $|$ \textbf{#2}} & \href{#4}{\faIcon{link}} {\href{#5}{ \faIcon{code}} } \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingExp}[3]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+   \textbf{#1}  $|$ #2 & #3 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+%\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Huge Ayush Rathore}} &  {\href{tel:+91xxxx497170}{{\faIcon{phone-square-alt} +91-xxxx497170}}} \\  \href{https://linkedin.com/in/ayushr1}{\faIcon{linkedin} LinkedIn}
+  {\href{https://github.com/ayushr1}{\faIcon{github} GitHub}}
+     {\href{https://ayushr1.netlify.app/}
+   {\faIcon{link} Portfolio}}
+  \href{https://leetcode.com/AyushR1/}{\includegraphics[height=10pt,width=10pt]{leetcode.png}LeetCode} & 
+ {\faIcon{envelope} \href{mailto:xxxx@rgipt.ac.in}{xxxx@rgipt.ac.in} }\\
+\end{tabular*}
+%-----------EDUCATION-----------------
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingb
+      {Bachelor of Technology $|$ Computer Science and Engineering}{Dec 2020 - Jun 2024}
+     {\href{https://rgipt.ac.in//}{{{An \textbf{Institute of National Importance} along the lines of \textbf{IITs}}}} }{} 
+     {\href{https://rgipt.ac.in//}{{{{Rajiv Gandhi Institute of Petroleum Technology}}}}}{CPI: 8.52*}
+    \resumeSubheading
+      {Intermediate  $|$ Matriculation}{Jun 2017 - May 2019}
+      {Burgess English Hr. Sec. School}{CGPA: 9.8}
+      
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+     \resumeSubheadingProject
+    {Sampark}{NIT-Rourkela Hackathon}{{NodeJS, ExpressJS, ReactJS} }
+{https://samparrk.netlify.app/}{https://github.com/AyushR1/Upastithi}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+{Developed a peer-to-peer 2-way video chat web application using \textbf{WebRTC} \&  \textbf{SocketIO} for real-time communication.}
+ 
+      \resumeItemListEnd
+ 
+            \resumeSubheadingProject
+    {Saarthi}{IIT-Roorkee Hackathon}{{NodeJS, ExpressJS, ReactJS, MongoDB} }
+{https://saarthii.netlify.app//}{https://github.com/AyushR1?tab=repositories\&q=saarthi\&type=\&language=\&sort=}
+    \resumeItemListStart
+        \resumeItemWithoutTitle
+          {Created a \textbf{multi-vendor} E-Commerce App on 3 platforms for sharing, buying and selling notes of freely available courses. }
+                  \resumeItemWithoutTitle
+          {Integrated \textbf{REST APIs} with \textbf{CRUD} operations for 10+ features like authentication, add/delete products, payments.}
+ %           \resumeItemWithoutTitle
+     %       {Produced Admin Control Panel performing \textbf{CRUD} operations with 9+ features like adding and deleting products.}
+   %     \resumeItemWithoutTitle
+    %      {Implemented the backend in \textbf{NodeJS} and \textbf{Express} with \textbf{MongoDB} using mongoose to manage the database.}
+      \resumeItemListEnd
+ \resumeSubheadingProject
+    {Upastithi}{Deployed RGIPT}{{Django, Python, MySQL} }
+{https://upastithi.pythonanywhere.com/}{https://github.com/AyushR1/Upastithi}
+
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+{Composed a Web App performing \textbf{CRUD} operations to digitally log attendance of RGIPT students, \textbf{deployed} and in use enabling faculties and \textbf{300}+ students to log, monitor \& track attendance.}
+      \resumeItemListEnd
+       
+            \resumeSubheadingProject
+    {Pahchan}{Blogging}{{ReactJS, FireBase} }
+{https://ayushr1.netlify.app/}{https://github.com/AyushR1/Portfolio}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {Designed a fully functional and responsive 1-page personal portfolio and blogging website with \textbf{CRUD} admin panel.}
+      \resumeItemListEnd 
+      \resumeSubHeadingListEnd
+
+\section{Open Source Contributions}
+  \resumeSubHeadingListStart
+ \resumeSubheadingProject
+    {Dynamic Instructions Calculation}{Open Source}{{REST API, Tool, Python, Bash, Flask} }
+{https://instructions.pythonanywhere.com/}{https://github.com/AyushR1/Dynamic-Instructions-Calculation}
+    \resumeItemListStart
+             \resumeItemWithoutTitle
+          {Devised a \textbf{GDB}-based bash and python \textbf{script} to get instruction analysis for a given program with 100\% precision.}
+          \resumeItemWithoutTitle
+          {Implemented \href{https://github.com/AyushR1/Dynamic-Instructions-Calculation/blob/main/docs/api.md}{\textbf{\textbf{REST API}}}
+          service with the \textbf{script} on the \textbf{server} to find instructions analysis of the first 10000 instructions.}
+          % \resumeItemWithoutTitle
+          % {Developed a tool \& web app to find instructions analysis of program with 100\% precision.}
+ 
+    %               \resumeItemWithoutTitle
+     %    {Implemented this tool as a web app utilising \textbf{Flask} in the backend and frontend visualised in HTML, CSS, and Javascript.}
+        %                 \resumeItemWithoutTitle
+        % {Illustrated current status from server-side backend to client-side using \textbf{Socket.IO}.}
+      \resumeItemListEnd
+       \resumeSubheadingProject
+    {AR\_Beast Kernel}{Open Source}{{Linux Kernel, Android, App, C}}
+{https://arbeast.github.io/}{https://github.com/AyushR1?tab=repositories\&q=kernel\&type=\&language=\&sort=stargazers}
+    \resumeItemListStart
+       \resumeItemWithoutTitle
+          {Built Custom Linux Kernel for 4 Android Devices, which helped \href{https://forum.xda-developers.com/t/discontinued-ar_beast-kernel-r6-3-18-101-mar-23-2018-dragontc.3735016/}{{\textbf{9000}}+ users \faIcon{external-link-alt}} to get an optimized device experience.}  
+          \resumeItemWithoutTitle
+          {Coded device-specific     \href{https://github.com/AyushR1/AR_Beast-Tomato/blob/tomato/drivers/thermal/arb/msm_thermal.c}{{Thermal control driver \faIcon[regular]{file-code}}} \& \href{https://github.com/AyushR1/AR_Beast-Zuk_Z2/commit/a982ac0e1ddad1d1338cbd6b0a955c583a93072d}{{Current Control driver \faIcon[regular]{file-code}}} in C, which reduced heating, increased performance by \textbf{10}\% and improved charging time by \textbf{30} min.}
+                            \resumeItemWithoutTitle
+          {Overhauled \href{https://github.com/AyushR1/KernelAdiutor-Mod}{{Android A}pp \faIcon{code}} to easily configure over 50 features offered by the kernel, reaching over \href{ https://androidfilehost.com/?w=profile&uid=673368273298917501}{{\textbf{30}},{\textbf{000} downloads \faIcon{external-link-alt}.}}}
+      \resumeItemListEnd
+           \resumeItemWithoutTitle
+           {\textbf{Collaborated in 10+ Open Source Projects }on Software Development, Scripting, Android, and Linux Kernels and participated in 3+ open source programs.}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheadingExp
+       {Computer Programming Tutor}{RGIPT}{Nov 2022 - Present}
+    \resumeItemListStart
+         \resumeItemWithoutTitle
+          {Taught programming in \textbf{C} and \textbf{Python} to over 57 junior students, guided in solving \textbf{100}+ problems of basic \href{https://github.com/AyushR1/CP-Tut}{Algorithms \faIcon[regular]{file-code}}.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%-----------PORS-----------------
+\section{Positions of Responsibility}
+
+  \resumeSubHeadingListStart
+  
+  \resumeSubheadingExp
+  {KODE Club}{Science \& Technical Council}{}
+        \resumeItemListStart
+          \resumeItemWithoutTitle     
+                 {\href{https://photos.app.goo.gl/C3RExPgdJpwppjnm9}{Lectured on \textbf{Open Source Development, Git,} and \textbf{GitHub} \faIcon{external-link-alt}} and tutored \href{ https://github.com/AyushR1/Git-GitHub-Workshop/}{{workshops for over 100 attendees} \faIcon[regular]{file-code}}.}     
+     \resumeItemListEnd
+       
+  \resumeSubheadingExp
+  {Technical Head}{ACM - SC}{}
+       \resumeItemListStart
+        \resumeItemWithoutTitle
+          {Automated bulk emailing using \href{https://github.com/AyushR1/Bulk-Certificate-Maker/}{scripts \faIcon{external-link-alt}} and designed the official \href{https://rgipt.acm.org/} {website \faIcon{external-link-alt}, leading to \textbf{99\%+} time savings.}}
+
+     \resumeItemWithoutTitle
+      {Composed \textbf{Competitive Programming} questions for \href{https://www.codechef.com/ODE2021/}{{Codin}g Contests \faIcon{external-link-alt}} contests and mentored over 50 students.}
+      \resumeItemListEnd
+    %  \resumeSubheadingPro
+    % { \href{https://www.rgipt.ac.in/en/page/home-cse}{{\textbf{Training and Placement Coordinator}}} $|$ \emph{Dept. of CSE, RGIPT} }{}
+   
+\resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+	\resumeSubHeadingListStart
+
+ % \resumeSubItem{Professional Certifications}{AWS Cloud Solutions Architect, IBM DevOps \& Software Developer \href{https://drive.google.com/file/d/15pTlVu3U5WDSyJxvZSGFACwZ2aaa9Cs1/view?usp=share_link}{\faIcon{certificate}}}
+\resumeSubItem{Professional Certifications}{AWS Cloud Technical Essentials, IBM DevOps \& Software Developer \href{https://drive.google.com/file/d/15pTlVu3U5WDSyJxvZSGFACwZ2aaa9Cs1/view?usp=share_link}{\faIcon{certificate}}}
+
+ \resumeSubItem{Languages}{C++, C, Python, SQL, HTML, CSS, JavaScript}
+        	\resumeSubItem{Tools/Frameworks}{Git, GitHub, Flask, NodeJs, ReactJS, Django, Docker, Kubernetes}    	\resumeSubItem{Courses}{Database Management, Data Structures, Algorithms, Networking, Web Technology, Cloud Computing}
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{Achievements}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Solved \href{https://github.com/AyushR1/DSA-QA/}{250+  Data Structures and Algorithmic {Problems} \faIcon{external-link-alt}}  on 
+\href{https://leetcode.com/AyushR1/}{LeetCode}, 
+\href{https://auth.geeksforgeeks.org/user/ayushr1_gfg}{{GeeksforGeeks}}, Codeforces.
+\hfill
+\href{https://www.linkedin.com/in/ayushr1}{\includegraphics[height=10pt,width=10pt]{leetcode.png}}  
+\href{https://auth.geeksforgeeks.org/user/ayushr1_gfg}{\faIcon{poll}}}
+\resumeItemWithoutTitle
+{Placed in the top 23 out of over 5,000 participants in the HackNITRR (NIT Rourkela) hackathon for the project, Sampark. 
+\hfill
+\href{https://devfolio.co/projects/sampark-8705}{\faIcon{certificate}}}
+\resumeItemWithoutTitle
+{Regionalist in the 2020-21 \href{https://drive.google.com/file/d/166f0APz01XpxkFRC2Jj-MZfdezvqN_cL/view?usp=sharing}{ICPC Asia Amritapuri Doublesite} \& \href{https://drive.google.com/file/d/12iHnk-QTFNEFMlT0RtzUQPJx-VE-aazo/view?usp=sharing}{{ICPC Asia Gwalior-Pune}} Programming Contest.\href{https://drive.google.com/drive/folders/1hOZy-qfPRcbJtT9_0KVmIQzabxIpurpy?usp=sharing}{\hfill\faIcon{certificate}}}
+\resumeItemWithoutTitle
+{Qualified for the 2021 \href{https://drive.google.com/file/d/1dZ_wFBDmbI-wAKbAvBAo_n1-ssqiqFjs/view?usp=sharing}{{Goo}gle CodeJam} Coding Competition, scoring 59 points.\href{https://drive.google.com/file/d/1dZ_wFBDmbI-wAKbAvBAo_n1-ssqiqFjs/view?usp=sharing}{\hfill \faIcon{certificate}}}
+\resumeItemWithoutTitle
+{Awarded \href{https://drive.google.com/file/d/15pTlVu3U5WDSyJxvZSGFACwZ2aaa9Cs1/view?usp=share_link}{Merit-Cum-Means Scholarship } for the \textbf{Top 10\%*} students in the CSE batch.\href{https://drive.google.com/file/d/15pTlVu3U5WDSyJxvZSGFACwZ2aaa9Cs1/view?usp=share_link}{\hfill\faIcon{certificate}}}
+\resumeItemWithoutTitle
+{Achieved a top 1.84\% rank in the IIT-JEE Advanced 2020 exam.\href{https://drive.google.com/file/d/15pTlVu3U5WDSyJxvZSGFACwZ2aaa9Cs1/view?usp=share_link}{\hfill\faIcon{certificate}}}
+% \resumeItemWithoutTitle
+% {Achieved \textbf{{International Rank 15}} \& Zonal Rank 1 in the  International English Olympiad 2017.}
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
